@@ -1,6 +1,17 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kirillchistov/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kirillchistov/fullstack-javascript-project-44/actions)
 
+### HW-2
+* [x] Убедитесь, что у вас установлена последняя (свежая) версия Node.js.
+* [x] Добавьте в package.json секцию "type" со значением "module". Она активирует возможность использовать модули без Babel.
+* [x] Создайте Makefile с командой install, выполняющей npm ci. Эта команда полезна при первом клонировании репозитория (или после удаления node_modules).
+* [x] Добавьте директорию node_modules в файл .gitignore. Зависимости не хранят в репозитории.
+* [x] Добавьте в Makefile команду brain-games:
+```
+node bin/brain-games.js
+```
+Набирать эту команду руками довольно долго, а make brain-games быстро и просто и позволит запускать игру без глобальной установки.
+
 ### HW-1
 * [x] Прочитайте наши советы по прохождению проектов — они помогут настроиться на правильный лад и расскажут что делать в трудных ситуациях.
 * [x] Установите Node.js последней версии в систему глобально (Установка JavaScript).
