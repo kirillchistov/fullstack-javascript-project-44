@@ -2,6 +2,54 @@
 [![Actions Status](https://github.com/kirillchistov/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kirillchistov/fullstack-javascript-project-44/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kirillchistov_fullstack-javascript-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=kirillchistov_fullstack-javascript-project-44)
 
+### HW-7 Игра: "Калькулятор"
+Суть игры: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+
+Вывод должен получиться следующий:
+```
+brain-calc
+
+Welcome to the Brain Games!
+May I have your name? Sam
+Hello, Sam!
+What is the result of the expression?
+Question: 4 + 10
+Your answer: 14
+Correct!
+Question: 25 - 11
+Your answer: 14
+Correct!
+Question: 25 * 7
+Your answer: 175
+Correct!
+Congratulations, Sam!
+```
+
+Достаточно реализовать следующие операции: +, - и *.
+Операции, как и числа, выбираются случайным образом.
+В случае, если пользователь даст неверный ответ, необходимо вывести:
+```
+Question: 25 * 7
+Your answer: 145
+'145' is wrong answer ;(. Correct answer was '175'.
+Let's try again, Sam!
+```
+и завершить игру.
+
+На данном этапе можно заметить, что игры имеют общий порядок выполнения (задать вопрос, получить ответ, сравнить ответ и т.д.). Эту логику можно вынести в одно место и переиспользовать внутри конкретных игр для устранения дублирования кода.
+
+BP: hexlet-pairs (если нужно)
+Принцип открытости закрытости
+Интерфейс
+Побочные эффекты
+Построение правильной архитектуры
+### Задачи: 
+* [x] Добавьте в директорию bin новый исполняемый файл с названием brain-calc.js.
+* [x] Реализуйте необходимую логику для работы игры.
+* [x] Добавьте ещё одну запись в секцию bin в package.json.
+* [x] Проверьте работоспособность новой игры.
+* [x] Добавьте в README.md аскинему с запуском и демонстрацией различных исходов игры.
+* [Asciinema HW-7](https://asciinema.org/a/35balr9IBMdgssFB)
 
 ### HW-6 Игра: "Проверка на чётность"
 * [x] Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
@@ -52,10 +100,8 @@ Congratulations, Sam!
 Помним про BP: Don’t repeat yourself, YAGNI, KISS, Магические числа, Предикаты
 
 * [x] Добавьте в директорию bin новый исполняемый файл с названием brain-even.
-
 * [x] Реализуйте необходимую логику для работы игры.
 Файлы, которые мы добавили ранее (src/cli.js, bin/brain-games.js), оставьте, как есть, и не смешивайте с остальным кодом. cli.js не предназначен для описания логики игр.
-
 * [x] Добавьте ещё одну запись в секцию bin в package.json:
 ```
 "bin": {
@@ -64,7 +110,6 @@ Congratulations, Sam!
   }
 ```
 * [x] Выполните отладку публикации и убедитесь, что после установки пакета команда brain-even в терминале запускает игру.
-
 * [x] Запишите аскинему с примером установки пакета, запуска игры, победой и поражением игрока. Опубликуйте её в сервисе и добавьте ссылку в README.md. 
 * [Asciinema HW-6](https://asciinema.org/a/TDmH5kMz1joyBzWD)
 
