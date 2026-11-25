@@ -1,0 +1,262 @@
+@import url('./vendor/fonts/fonts.css');
+@import url('./vendor/normalize.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: #000;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Keep your original utility classes */
+.list { padding: 0; list-style-type: none; margin: 0; }
+.link { color: #000; text-decoration: none; transition: 0.3s; }
+.link:hover { opacity: 0.7; }
+
+.button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+.button:hover { opacity: 0.8; }
+
+/* ---- New additions, consistent with the reference style ---- */
+
+.page {
+  padding: 64px 0;
+}
+
+.page__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.page__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 48px;
+}
+
+/* Game card grid */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Game card: white background + thin border, unified with the reference minimal style */
+.game-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 28px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.game-card:hover {
+  border-color: #000;
+  transform: translateY(-2px);
+}
+
+.game-card__icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.game-card__title {
+  font-weight: 900;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.game-card__desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+
+.game-card__button {
+  align-self: flex-start;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Game page */
+.play {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.play__back {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: #666;
+}
+
+.play__title {
+  font-weight: 900;
+  font-size: 36px;
+  margin: 0 0 8px;
+}
+
+.play__rules {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 8px;
+}
+
+.play__progress {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 40px;
+}
+
+.play__question {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 0 0 32px;
+}
+
+/* Terminal output area: monospace font, light gray background, maintains overall black-and-white tone */
+.play__terminal {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+  font-family: "SF Mono", "Consolas", monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  min-height: 120px;
+}
+
+.play__terminal-line--ok { color: #0a7d32; }
+.play__terminal-line--err { color: #c02323; }
+
+.play__form {
+  display: flex;
+  gap: 12px;
+}
+
+.play__input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.play__input:focus {
+  border-color: #000;
+}
+
+.play__submit {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Result screen */
+.play__result {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.play__result-title {
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.play__result-text {
+  font-size: 17px;
+  color: #666;
+  margin: 0 0 32px;
+}
+
+.play__result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.play__result-button {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.play__result-button--secondary {
+  background: #fff;
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+
+.play__result-button--secondary:hover {
+  border-color: #000;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 40px 0;
+  }
+
+  .page__title {
+    font-size: 36px;
+  }
+
+  .play {
+    padding: 40px 0;
+  }
+
+  .play__title {
+    font-size: 28px;
+  }
+
+  .play__form {
+    flex-direction: column;
+  }
+}

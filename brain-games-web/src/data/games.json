@@ -1,0 +1,74 @@
+[
+  {
+    "id": "even",
+    "title": "Even or Odd",
+    "description": "Answer \"yes\" if the number is even, otherwise answer \"no\".",
+    "icon": "🔢"
+  },
+  {
+    "id": "calc",
+    "title": "Calculator",
+    "description": "Calculate the result of a random arithmetic expression.",
+    "icon": "➕"
+  },
+  {
+    "id": "gcd",
+    "title": "GCD",
+    "description": "Find the greatest common divisor of two numbers.",
+    "icon": "🔗"
+  },
+  {
+    "id": "progression",
+    "title": "Progression",
+    "description": "Find the missing number in an arithmetic progression.",
+    "icon": "📈"
+  },
+  {
+    "id": "prime",
+    "title": "Prime Number",
+    "description": "Answer \"yes\" if the number is prime, otherwise answer \"no\".",
+    "icon": "🔍"
+  },
+  {
+    "id": "square",
+    "title": "Square",
+    "description": "What is the square of the given number?",
+    "icon": "🔲"
+  },
+  {
+    "id": "geometric",
+    "title": "Geometric",
+    "description": "Find the missing number in a geometric progression.",
+    "icon": "📊"
+  },
+  {
+    "id": "fibonacci",
+    "title": "Fibonacci",
+    "description": "What number comes next in the sequence?",
+    "icon": "🌀"
+  },
+  {
+    "id": "perfect-square",
+    "title": "Perfect Square",
+    "description": "Answer \"yes\" if the number is a perfect square, otherwise answer \"no\".",
+    "icon": "🟩"
+  },
+  {
+    "id": "digit-sum",
+    "title": "Digit Sum",
+    "description": "Find the sum of the digits of the number.",
+    "icon": "🔣"
+  },
+  {
+    "id": "remainder",
+    "title": "Remainder",
+    "description": "Find the remainder when the first number is divided by the second.",
+    "icon": "➗"
+  },
+  {
+    "id": "lcm",
+    "title": "LCM",
+    "description": "Find the least common multiple of two numbers.",
+    "icon": "🧮"
+  }
+]
